@@ -1,0 +1,13 @@
+/build/
+/sort_main
+/test_basic
+/bench_sort
+/sort_profile
+*.exe
+*.o
+*.d
+*.gcda
+*.gcno
+/*.gcov
+/gmon.out
+
