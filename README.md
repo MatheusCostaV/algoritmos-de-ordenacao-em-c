@@ -1,19 +1,18 @@
 # Trabalho Prático de Ordenação em C
 
 **Disciplina:** Algoritmos e Estruturas de Dados I • UFMA • Terceira Unidade  
-**Dupla:** Matheus Victor de Assis Costa e [nome completo do colega]  
-**Repositório público:** [preencher]  
+**Autor:** Matheus Victor de Assis Costa  
 **Vídeo:** [preencher depois da gravação]
 
-Esta base acompanha o laboratório do professor. O Bubble Sort funciona como exemplo de implementação, teste e contagem. Os outros cinco algoritmos têm arquivos próprios com instruções para a dupla completar. Os relatórios devem ser preenchidos com as medições feitas pela dupla.
+Esta base acompanha o laboratório do professor. O Bubble Sort funciona como exemplo de implementação, teste e contagem. Os outros cinco algoritmos têm arquivos próprios com instruções de implementação. Os relatórios devem registrar as medições do projeto.
 
 ## Primeira sessão
 
 1. Na máquina Windows, use o Ubuntu pelo WSL. Se ainda precisar instalar, execute `wsl --install` no PowerShell como administrador e abra o Ubuntu. Todo o restante roda no terminal Linux.
 2. No Ubuntu, rode `sudo apt update` e `sudo apt install git build-essential cppcheck`.
-3. Um integrante cria **um** repositório público no GitHub e adiciona o colega como colaborador. Os dois clonam esse mesmo repositório para o diretório pessoal do Linux. Confiram `git config user.name` e `git config user.email` em cada máquina. Usem o e-mail vinculado à própria conta do GitHub.
-4. Copiem os arquivos **de dentro** da pasta deste projeto para o clone, incluindo `.gitignore` e preservando o `.git` do clone.
-5. Na raiz, rodem os comandos abaixo. Em seguida, abram `src/basicos/bubble.c` e simulem manualmente o vetor `[3, 1, 2]`. Expliquem por que há três comparações e duas trocas.
+3. Abra o clone do repositório no Ubuntu e confira `git config user.name` e `git config user.email`. Use o e-mail associado à sua conta do GitHub.
+4. Confira se `Makefile`, `src/`, `tests/`, `docs/` e `.gitignore` estão na raiz do projeto.
+5. Na raiz, rode os comandos abaixo. Em seguida, abra `src/basicos/bubble.c` e simule manualmente o vetor `[3, 1, 2]`. Explique por que há três comparações e duas trocas.
 
 ```bash
 make
@@ -21,20 +20,21 @@ make test
 ./sort_main 5000 bubble
 ```
 
-A suíte inicial deve mostrar seis linhas `PASSOU` para o Bubble, contando o teste das métricas. Na demonstração, esperem valores de tempo diferentes entre máquinas. Quando a dupla entender o exemplo e verificar a estrutura, registre o trabalho que efetivamente fez.
+A suíte inicial deve mostrar seis linhas `PASSOU` para o Bubble, contando o teste das métricas. Os tempos podem variar entre máquinas. Faça commits conforme concluir etapas reais do trabalho.
 
-## Divisão sugerida para duas semanas
+## Cronograma individual sugerido
 
-| Sessão | Matheus | Colega | Resultado da sessão |
-|---|---|---|---|
-| 1 | Configurar o projeto e simular o Bubble | Configurar acesso e revisar os testes do Bubble | Clones funcionam e ambos explicam o exemplo |
-| 2 | Selection e testes | Insertion e testes | Três básicos disponíveis no programa |
-| 3 e 4 | Merge e testes | Quick, Heap e testes | Seis algoritmos corretos, com revisão cruzada |
-| 5 | Montar e executar o benchmark | Rodar gcov, gprof e cppcheck | CSV e saídas reais das ferramentas |
-| 6 | Comparar medições com a teoria | Completar relatórios e conferir o clone | Ambos sabem explicar código e resultados |
-| 7 | Ensaiar e gravar | Ensaiar e gravar | Tag, vídeo e comentário no SIGAA |
+| Sessão | O que fazer | Resultado esperado |
+|---|---|---|
+| 1 | Configurar o ambiente, simular o Bubble Sort e rodar os testes iniciais | Projeto compila e os testes do Bubble passam |
+| 2 | Implementar e testar Selection Sort e Insertion Sort | Três algoritmos básicos integrados |
+| 3 | Implementar e testar Merge Sort e Quick Sort | Cinco algoritmos integrados |
+| 4 | Implementar e testar Heap Sort e revisar os casos de borda | Seis algoritmos integrados e testados |
+| 5 | Executar o benchmark e rodar gcov, gprof e cppcheck | CSV de medições e resultados das ferramentas |
+| 6 | Comparar as medições com a teoria, completar os relatórios e validar em um clone limpo | Análise e documentação revisadas |
+| 7 | Ensaiar, gravar o vídeo e preparar a entrega | Tag, vídeo e envio no SIGAA |
 
-O tutorial sugere duas semanas. A data de entrega deve ser conferida no SIGAA.
+Distribua as sessões ao longo de duas semanas. Confira no SIGAA o prazo e confirme com o professor as regras para entrega individual.
 
 ## Como acrescentar cada algoritmo
 
