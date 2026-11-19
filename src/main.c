@@ -15,7 +15,7 @@ typedef struct {
 
 static const Algoritmo algoritmos[] = {
     {"bubble", bubbleSort},
-    {"selection", NULL},
+    {"selection", selectionSort},
     {"insertion", NULL},
     {"merge", NULL},
     {"quick", NULL},

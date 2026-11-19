@@ -45,6 +45,14 @@ int main(void)
 
     /* TODO: acrescente pelo menos dois casos para cada algoritmo implementado. */
     puts("Escopo da suíte inicial: Bubble Sort.");
+    int selection_exemplo[] = {3, 1, 2};
+int selection_duplicatas[] = {3, -1, 3, 0};
+
+falhas += verifica("Selection com vetor desordenado", selectionSort,
+                   selection_exemplo, esperado_crescente, 3);
+falhas += verifica("Selection com duplicatas e negativo", selectionSort,
+                   selection_duplicatas, esperado, 4);
+                   
     return falhas ? EXIT_FAILURE : EXIT_SUCCESS;
 }
 
